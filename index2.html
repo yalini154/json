@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="hanamei"> </p>
+    <script> 
+        async function sub(a,b) {
+            let z = await a - b;
+            dislay(z);
+        }
+        function dislay(sum){
+            document.getElementById("hanamei").innerHTML=sum;
+        }
+        sub(89,70);
+    </script>
+</body>
+</html>
